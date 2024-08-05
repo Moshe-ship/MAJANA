@@ -2,9 +2,7 @@ baseURL = 'https://majana.netlify.app/'
 languageCode = 'en-us'
 title = 'Majana'
 theme = 'PaperMod'
-disableKinds = ["RSS"]
 
-# Additional theme settings
 [params]
   description = "Majana: Elevate Your Business with Strategic Marketing"
   images = ["https://majana.netlify.app/images/branding.jpg"]
@@ -19,14 +17,13 @@ disableKinds = ["RSS"]
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
+  customCSS = ["css/custom.css"]
 
-# Social media links
 [social]
   github = "https://github.com/Moshe-ship"
   linkedin = "https://www.linkedin.com/in/yourprofile"
   twitter = "https://twitter.com/yourprofile"
 
-# Menu settings
 [[menu.main]]
   name = "Home"
   url = "/"
@@ -43,6 +40,15 @@ disableKinds = ["RSS"]
   weight = 3
 
 [[menu.main]]
+  name = "Blog"
+  url = "/blog/"
+  weight = 4
+
+[[menu.main]]
   name = "Contact"
   url = "/contact/"
-  weight = 4
+  weight = 5
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
