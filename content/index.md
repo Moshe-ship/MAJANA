@@ -67,7 +67,7 @@ form button {
     cursor: pointer;
     border-radius: 3px;
     width: 100%;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 form button:hover {
@@ -102,12 +102,12 @@ form button:hover {
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     font-weight: bold;
 }
 .animated-line {
     display: inline-block;
-    animation: scroll-left 15s linear infinite;
+    animation: scroll-left 10s linear infinite;
 }
 .animated-line:nth-child(2) {
     animation-direction: reverse;
@@ -149,10 +149,10 @@ form button:hover {
 }
 
 .btn {
-    padding: 15px 30px;
+    padding: 10px 20px;
     font-size: 1.2rem;
     border-radius: 5px;
-    margin: 10px 5px;
+    margin: 10px;
     text-decoration: none;
 }
 .btn-primary {
@@ -173,87 +173,10 @@ form button:hover {
     background-color: #4CAF50;
     color: white;
 }
-.animated-text {
-    animation: text-flicker 1s infinite alternate;
-}
-
-@keyframes text-flicker {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.5;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-/* Hamburger menu styles */
-.hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-    padding: 10px;
-}
-
-.hamburger div {
-    width: 25px;
-    height: 3px;
-    background-color: #333;
-    margin: 4px 0;
-    transition: 0.4s;
-}
-
-.menu {
-    display: flex;
-}
-
-@media (max-width: 768px) {
-    .hamburger {
-        display: flex;
-    }
-    .menu {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-    }
-    .menu.active {
-        display: flex;
-    }
-    .menu a {
-        padding: 10px 20px;
-        border-bottom: 1px solid #ccc;
-    }
-}
 </style>
 
-<header>
-    <nav>
-        <div class="hamburger" onclick="toggleMenu()">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        <div class="menu" id="menu">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/services">Services</a>
-            <a href="/blog">Blog</a>
-            <a href="/contact">Contact</a>
-        </div>
-    </nav>
-</header>
-
-<script>
-function toggleMenu() {
-    var menu = document.getElementById('menu');
-    menu.classList.toggle('active');
-}
-</script>
-
 <div class="text-center">
-    <a href="#contact-form" class="btn btn-primary animated-text">Hire Us</a>
+    <a href="#contact-form" class="btn btn-primary">Hire Us</a>
     <a href="/about" class="btn btn-secondary">Learn More</a>
 </div>
 
