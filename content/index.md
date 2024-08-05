@@ -188,7 +188,67 @@ form button:hover {
         opacity: 1;
     }
 }
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+    transition: 0.4s;
+}
+
+.menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+    .menu.active {
+        display: flex;
+    }
+    .menu a {
+        padding: 10px 20px;
+        border-bottom: 1px solid #ccc;
+    }
+}
 </style>
+
+<header>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="menu" id="menu">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/services">Services</a>
+            <a href="/blog">Blog</a>
+            <a href="/contact">Contact</a>
+        </div>
+    </nav>
+</header>
+
+<script>
+function toggleMenu() {
+    var menu = document.getElementById('menu');
+    menu.classList.toggle('active');
+}
+</script>
 
 <div class="text-center">
     <a href="#contact-form" class="btn btn-primary animated-text">Hire Us</a>
