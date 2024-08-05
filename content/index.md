@@ -6,26 +6,29 @@ description = "Discover how Majana's strategic marketing can help you achieve yo
 <style>
 body {
     font-family: 'Open Sans', sans-serif;
-    line-height: 1.6;
     background-color: #000;
     color: #fff;
     margin: 0;
     padding: 0;
+    line-height: 1.6;
 }
 h1, h2, h3 {
     color: #4CAF50;
+    text-transform: uppercase;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 20vh;
 }
 h2 {
-    font-size: 2.5rem;
-    border-bottom: 2px solid #4CAF50;
-    padding-bottom: 10px;
-    margin-top: 40px;
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
 }
 h3 {
-    font-size: 2rem;
+    font-size: 2.5rem;
+    margin: 1rem 0;
 }
 p {
     margin: 20px 0;
@@ -34,11 +37,39 @@ ul {
     list-style-type: disc;
     margin-left: 20px;
 }
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.section {
+    padding: 60px 0;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.text-center {
+    text-align: center;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.font-bold {
+    font-weight: bold;
+}
+.bg-light {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 40px;
+}
 form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     color: #000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -68,39 +99,17 @@ form button {
 form button:hover {
     background-color: #45a049;
 }
-.container {
-    max-width: 1200px;
-    margin: auto;
-    padding: 20px;
-}
-.section {
-    padding: 60px 0;
-}
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.text-center {
-    text-align: center;
-}
-.uppercase {
-    text-transform: uppercase;
-}
-.font-bold {
-    font-weight: bold;
-}
 </style>
 
-<div class="section text-center">
+<div class="section">
     <h1 class="uppercase font-bold">Majana</h1>
-    <p>Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
+    <p class="text-center">Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
 </div>
 
 <div class="section">
     <h2 class="text-center">Our Services</h2>
-    <div class="container flex flex-col lg:flex-row gap-[2rem] lg:gap-[4rem] justify-center">
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
+    <div class="container flex">
+        <div class="bg-light">
             <h3 class="uppercase font-bold">Digital Marketing</h3>
             <ul>
                 <li>SEO</li>
@@ -108,7 +117,7 @@ form button:hover {
                 <li>Content Marketing</li>
             </ul>
         </div>
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
+        <div class="bg-light">
             <h3 class="uppercase font-bold">Branding</h3>
             <ul>
                 <li>Brand Strategy</li>
@@ -116,7 +125,7 @@ form button:hover {
                 <li>Brand Identity</li>
             </ul>
         </div>
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
+        <div class="bg-light">
             <h3 class="uppercase font-bold">Web Development</h3>
             <ul>
                 <li>Custom Websites</li>
@@ -129,14 +138,16 @@ form button:hover {
 
 <div class="section">
     <h2 class="text-center">Recent Blog Posts</h2>
-    <ul class="container">
-        {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+    <div class="container">
+        <ul>
+            {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
             <li>
                 <a href="{{ .RelPermalink }}">{{ .Title }}</a>
                 <p>{{ .Summary }}</p>
             </li>
-        {{ end }}
-    </ul>
+            {{ end }}
+        </ul>
+    </div>
 </div>
 
 <div class="section">
