@@ -9,15 +9,20 @@ theme = 'PaperMod'
   ShowReadingTime = false
   ShowShareButtons = true
   ShowPostNavLinks = true
-  ShowBreadCrumbs = false
+  ShowBreadCrumbs = false  # Hide breadcrumbs
   disableSummary = false
-  ShowToc = false
+  ShowToc = false  # Hide Table of Contents
   TocOpen = false
+  TocTitle = "Table of Contents"
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
-  buttonText = "Hire Us"
-  buttonLink = "#contact-section"
+  customCSS = ["css/custom.css"]
+
+  [[params.buttons]]
+    name = "Hire Us"
+    url = "#contact-form"  # Assuming the contact form has an ID for scrolling
+    class = "btn btn-primary"
 
 [social]
   github = "https://github.com/Moshe-ship"

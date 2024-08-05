@@ -7,8 +7,6 @@ description = "Discover how Majana's strategic marketing can help you achieve yo
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    background-color: #000;
-    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -39,7 +37,6 @@ form {
     margin: 40px auto;
     padding: 20px;
     background-color: #f9f9f9;
-    color: #000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -139,27 +136,27 @@ form button:hover {
     margin-bottom: 10px;
 }
 
-#contact-button, #hire-button {
-    display: block;
-    margin: 40px auto;
-    padding: 15px 30px;
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
     background-color: #4CAF50;
-    color: white;
-    text-align: center;
     border: none;
+    border-radius: 5px;
+    text-align: center;
     cursor: pointer;
-    border-radius: 3px;
-    font-size: 1.2rem;
+    text-decoration: none;
 }
 
-#contact-button:hover, #hire-button:hover {
+.btn:hover {
     background-color: #45a049;
 }
 </style>
 
 <div class="section animated-lines">
-    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
-    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
+    <div class="animated-line">Google Ads • Local SEO • Google Ranking • Technical SEO • Media Buying • META Ads • X Ads • TikTok Ads •</div>
+    <div class="animated-line">Google Ads • Local SEO • X ads • Technical SEO • Media Buying • META Ads • Google Ranking • TikTok Ads •</div>
 </div>
 
 <div class="section">
@@ -188,10 +185,10 @@ form button:hover {
     </div>
 </div>
 
-<div class="section" id="contact-section">
+<div class="section">
     <h2 class="text-center">Contact Us</h2>
     <p class="text-center">If you have any questions or want to work with us, feel free to contact us through the form below.</p>
-    <form name="contact" method="POST" netlify>
+    <form name="contact" method="POST" netlify id="contact-form">
         <p>
             <label>Your Name: <input type="text" name="name" required /></label>
         </p>
