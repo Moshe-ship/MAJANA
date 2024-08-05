@@ -102,12 +102,12 @@ form button:hover {
     align-items: center;
     overflow: hidden;
     white-space: nowrap;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: bold;
 }
 .animated-line {
     display: inline-block;
-    animation: scroll-left 20s linear infinite;
+    animation: scroll-left 15s linear infinite;
 }
 .animated-line:nth-child(2) {
     animation-direction: reverse;
@@ -149,8 +149,8 @@ form button:hover {
 }
 
 .btn {
-    padding: 20px 40px;
-    font-size: 1.5rem;
+    padding: 15px 30px;
+    font-size: 1.2rem;
     border-radius: 5px;
     margin: 10px 5px;
     text-decoration: none;
