@@ -18,9 +18,6 @@ theme = 'PaperMod'
   ShowCategory = true
   defaultTheme = "auto"
 
-  # Custom CSS inclusion
-  customCSS = ["css/custom.css"]
-
 [social]
   github = "https://github.com/Moshe-ship"
   linkedin = "https://www.linkedin.com/in/yourprofile"
