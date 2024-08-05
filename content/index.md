@@ -40,15 +40,15 @@ Welcome to Majana, where we elevate your business through strategic marketing. O
 
 If you have any questions or want to work with us, feel free to contact us through the form below.
 
-<form name="contact" method="POST" data-netlify="true" style="max-width: 600px; margin: auto; padding: 20px; background-color: #f9f9f9; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+<form name="contact" netlify>
   <p>
-    <label>Your Name: <input type="text" name="name" required style="width: 100%; padding: 10px; margin: 5px 0;" /></label>
+    <label>Name <input type="text" name="name" required style="width: 100%; padding: 10px; margin: 5px 0;" /></label>
   </p>
   <p>
-    <label>Your Email: <input type="email" name="email" required style="width: 100%; padding: 10px; margin: 5px 0;" /></label>
+    <label>Email <input type="email" name="email" required style="width: 100%; padding: 10px; margin: 5px 0;" /></label>
   </p>
   <p>
-    <label>Your Message: <textarea name="message" required style="width: 100%; padding: 10px; margin: 5px 0;"></textarea></label>
+    <label>Your Message <textarea name="message" required style="width: 100%; padding: 10px; margin: 5px 0;"></textarea></label>
   </p>
   <p>
     <button type="submit" style="background-color: #4CAF50; color: white; padding: 15px 20px; border: none; cursor: pointer;">Send</button>
