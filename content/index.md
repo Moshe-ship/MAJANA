@@ -90,57 +90,31 @@ form button:hover {
 .font-bold {
     font-weight: bold;
 }
-
-.marquee {
-    width: 100%;
-    white-space: nowrap;
+.animated-lines {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    background: black;
-    padding: 1rem 0;
-    margin: 0;
-}
-
-.marquee span {
-    display: inline-block;
-    padding-left: 100%;
-    animation: marquee 15s linear infinite;
+    white-space: nowrap;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #4CAF50;
 }
-
-.marquee2 {
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    position: relative;
-    box-sizing: border-box;
-    background: black;
-    padding: 1rem 0;
-    margin: 0;
-    transform: rotateX(180deg);
-}
-
-.marquee2 span {
+.animated-line {
     display: inline-block;
-    padding-left: 100%;
-    animation: marquee2 15s linear infinite;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #4CAF50;
-    transform: rotateX(180deg);
+    animation: scroll-left 10s linear infinite;
+}
+.animated-line:nth-child(2) {
+    animation-direction: reverse;
 }
 
-@keyframes marquee {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(-100%, 0); }
-}
-
-@keyframes marquee2 {
-    0% { transform: translate(0, 0); }
-    100% { transform: translate(100%, 0); }
+@keyframes scroll-left {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 </style>
 
@@ -149,31 +123,29 @@ form button:hover {
     <p>Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
 </div>
 
-<div class="marquee">
-    <span>Google Ranking • Google Maps • Media Buying • Local SEO • Lead Generation • Digital Marketing Strategy</span>
-</div>
-<div class="marquee2">
-    <span>Google Ranking • Google Maps • Media Buying • Local SEO • Lead Generation • Digital Marketing Strategy</span>
+<div class="section animated-lines">
+    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
+    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
 </div>
 
 <div class="section">
     <h2 class="text-center">Our Services</h2>
-    <div class="container flex flex-col lg:flex-row gap-4 lg:gap-8 justify-center">
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%] text-center">
+    <div class="container flex flex-col lg:flex-row gap-8 justify-center">
+        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
             <h3 class="uppercase font-bold">Media Buying</h3>
-            <p>Effective media buying strategies to maximize your ROI.</p>
+            <p>Effective media buying strategies to maximize your ad spend and reach your target audience.</p>
         </div>
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%] text-center">
+        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
             <h3 class="uppercase font-bold">Local SEO</h3>
-            <p>Boost your local presence and attract more customers.</p>
+            <p>Improve your local search rankings and attract more customers to your business.</p>
         </div>
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%] text-center">
+        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
             <h3 class="uppercase font-bold">Lead Generation</h3>
-            <p>Generate high-quality leads for your business.</p>
+            <p>Generate high-quality leads to grow your business and increase sales.</p>
         </div>
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%] text-center">
+        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
             <h3 class="uppercase font-bold">Digital Marketing Strategy</h3>
-            <p>Customized digital marketing strategies for your business.</p>
+            <p>Comprehensive digital marketing strategies to help you achieve your business goals.</p>
         </div>
     </div>
 </div>
