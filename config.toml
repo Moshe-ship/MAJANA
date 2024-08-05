@@ -11,38 +11,11 @@ theme = 'PaperMod'
   ShowPostNavLinks = true
   ShowBreadCrumbs = true
   disableSummary = false
-  ShowToc = true
+  ShowToc = false
   TocOpen = false
-  TocTitle = "Table of Contents"
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
-  homeInfoMode = true
-  profileMode = true
-
-  [profileMode]
-    enabled = true
-    title = "Majana: Elevate Your Business"
-    subtitle = "Strategic Marketing for Business Growth"
-    imageUrl = "https://majana.netlify.app/images/branding.jpg"
-    imageTitle = "Majana Logo"
-    imageWidth = 120
-    imageHeight = 120
-    buttons = [
-      { name = "Archive", url = "/archive" },
-      { name = "Github", url = "https://github.com/Moshe-ship" }
-    ]
-
-  [socialIcons]
-    [[socialIcons]]
-      name = "github"
-      url = "https://github.com/Moshe-ship"
-    [[socialIcons]]
-      name = "linkedin"
-      url = "https://www.linkedin.com/in/yourprofile"
-    [[socialIcons]]
-      name = "twitter"
-      url = "https://twitter.com/yourprofile"
 
 [social]
   github = "https://github.com/Moshe-ship"
