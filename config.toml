@@ -4,23 +4,7 @@ title = 'Majana'
 theme = 'PaperMod'
 
 [params]
-  description = "Majana: Elevate Your Business with Strategic Marketing"
-  images = ["https://majana.netlify.app/images/branding.jpg"]
-  ShowReadingTime = false
-  ShowShareButtons = true
-  ShowPostNavLinks = true
-  ShowBreadCrumbs = true
-  disableSummary = false
-  ShowToc = true
-  TocOpen = false
-  TocTitle = "Table of Contents"
-  ShowTags = true
-  ShowCategory = true
-  defaultTheme = "auto"
-  homeInfoMode = "true"
-
-[params.profileMode]
-  enabled = true
+  profileMode = true
   title = "Majana: Elevate Your Business"
   subtitle = "Strategic Marketing for Business Growth"
   imageUrl = "https://majana.netlify.app/images/branding.jpg"
@@ -28,13 +12,13 @@ theme = 'PaperMod'
   imageWidth = 120
   imageHeight = 120
 
-[[params.profileMode.buttons]]
-  name = "Archive"
-  url = "/archive"
+  [[params.buttons]]
+    name = "Archive"
+    url = "/archive"
 
-[[params.profileMode.buttons]]
-  name = "Github"
-  url = "https://github.com/Moshe-ship"
+  [[params.buttons]]
+    name = "Github"
+    url = "https://github.com/Moshe-ship"
 
 [social]
   github = "https://github.com/Moshe-ship"
