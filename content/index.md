@@ -40,7 +40,7 @@ Welcome to Majana, where we elevate your business through strategic marketing. O
 
 If you have any questions or want to work with us, feel free to contact us through the form below.
 
-<form name="contact" netlify>
+<form name="contact" method="POST" netlify>
   <p>
     <label>Name <input type="text" name="name" required style="width: 100%; padding: 10px; margin: 5px 0;" /></label>
   </p>
