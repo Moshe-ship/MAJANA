@@ -7,8 +7,6 @@ description = "Discover how Majana's strategic marketing can help you achieve yo
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
-    background-color: #000;
-    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -39,7 +37,6 @@ form {
     margin: 40px auto;
     padding: 20px;
     background-color: #f9f9f9;
-    color: #000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -116,6 +113,28 @@ form button:hover {
         transform: translateX(-100%);
     }
 }
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.service-box {
+    border: 1px solid #4CAF50;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    flex: 1 1 calc(33.333% - 2rem);
+    box-sizing: border-box;
+}
+
+.service-icon {
+    font-size: 3rem;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
 </style>
 
 <div class="section text-center">
@@ -130,20 +149,24 @@ form button:hover {
 
 <div class="section">
     <h2 class="text-center">Our Services</h2>
-    <div class="container flex flex-col lg:flex-row gap-8 justify-center">
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
+    <div class="container services">
+        <div class="service-box">
+            <div class="service-icon">📊</div>
             <h3 class="uppercase font-bold">Media Buying</h3>
             <p>Effective media buying strategies to maximize your ad spend and reach your target audience.</p>
         </div>
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
+        <div class="service-box">
+            <div class="service-icon">📍</div>
             <h3 class="uppercase font-bold">Local SEO</h3>
             <p>Improve your local search rankings and attract more customers to your business.</p>
         </div>
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
+        <div class="service-box">
+            <div class="service-icon">🎯</div>
             <h3 class="uppercase font-bold">Lead Generation</h3>
             <p>Generate high-quality leads to grow your business and increase sales.</p>
         </div>
-        <div class="lg:max-w-[50%] 2xl:max-w-[33%]">
+        <div class="service-box">
+            <div class="service-icon">📈</div>
             <h3 class="uppercase font-bold">Digital Marketing Strategy</h3>
             <p>Comprehensive digital marketing strategies to help you achieve your business goals.</p>
         </div>
