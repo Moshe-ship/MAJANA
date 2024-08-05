@@ -18,8 +18,9 @@ theme = 'PaperMod'
   ShowCategory = true
   defaultTheme = "auto"
   homeInfoMode = true
+  profileMode = true
 
-  [params.profileMode]
+  [profileMode]
     enabled = true
     title = "Majana: Elevate Your Business"
     subtitle = "Strategic Marketing for Business Growth"
@@ -32,14 +33,14 @@ theme = 'PaperMod'
       { name = "Github", url = "https://github.com/Moshe-ship" }
     ]
 
-  [params.socialIcons]
-    [[params.socialIcons]]
+  [socialIcons]
+    [[socialIcons]]
       name = "github"
       url = "https://github.com/Moshe-ship"
-    [[params.socialIcons]]
+    [[socialIcons]]
       name = "linkedin"
       url = "https://www.linkedin.com/in/yourprofile"
-    [[params.socialIcons]]
+    [[socialIcons]]
       name = "twitter"
       url = "https://twitter.com/yourprofile"
 
