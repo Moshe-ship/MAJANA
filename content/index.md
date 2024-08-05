@@ -38,11 +38,21 @@ h2 {
     overflow: hidden;
     justify-content: center;
     align-items: center;
+    white-space: nowrap;
 }
-.flex span {
+.scroll-text {
     display: inline-block;
     font-size: 2rem;
     margin: 0 1rem;
+    animation: scroll-text 10s linear infinite;
+}
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 .uppercase {
     text-transform: uppercase;
@@ -54,6 +64,40 @@ h2 {
     max-width: 1200px;
     margin: auto;
 }
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #000;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+form p {
+    margin-bottom: 15px;
+}
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+}
+form button:hover {
+    background-color: #45a049;
+}
 </style>
 
 <div class="section text-center">
@@ -62,9 +106,8 @@ h2 {
 </div>
 
 <div class="section flex">
-    <span>Web Development • Static Websites • Hugo SSG • Full-Stack Applications • Next.JS • Supabase • </span>
-    <span>Web Development • Static Websites • Hugo SSG • Full-Stack Applications • Next.JS • Supabase • </span>
-    <span>Web Development • Static Websites • Hugo SSG • Full-Stack Applications • Next.JS • Supabase • </span>
+    <div class="scroll-text">Web Development • Static Websites • Hugo SSG • Full-Stack Applications • Next.JS • Supabase • </div>
+    <div class="scroll-text">Web Development • Static Websites • Hugo SSG • Full-Stack Applications • Next.JS • Supabase • </div>
 </div>
 
 <div class="section">
@@ -127,19 +170,3 @@ h2 {
         </p>
     </form>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', function() {
-        const scrollContainer = document.querySelector('.flex');
-        scrollContainer.style.animation = 'scrolling-text 10s linear infinite';
-    });
-
-    @keyframes scrolling-text {
-        0% {
-            transform: translateX(100%);
-        }
-        100% {
-            transform: translateX(-100%);
-        }
-    }
-</script>
