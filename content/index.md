@@ -34,24 +34,41 @@ h2 {
 }
 .flex {
     display: flex;
-    flex-wrap: nowrap;
-    overflow: hidden;
     justify-content: center;
     align-items: center;
-    white-space: nowrap;
+}
+.scroll-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .scroll-text {
     display: inline-block;
-    font-size: 2rem;
-    margin: 0 1rem;
-    animation: scroll-text 10s linear infinite;
+    font-size: 1.5rem;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 0;
 }
-@keyframes scroll-text {
+.scroll-text-left {
+    animation: scroll-text-left 20s linear infinite;
+}
+.scroll-text-right {
+    animation: scroll-text-right 20s linear infinite;
+}
+@keyframes scroll-text-left {
     0% {
         transform: translateX(100%);
     }
     100% {
         transform: translateX(-100%);
+    }
+}
+@keyframes scroll-text-right {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
     }
 }
 .uppercase {
@@ -64,11 +81,30 @@ h2 {
     max-width: 1200px;
     margin: auto;
 }
+.services-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+.service-item {
+    width: calc(50% - 2rem);
+    background-color: #222;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 8px;
+}
+.service-item h3 {
+    margin-bottom: 1rem;
+}
+.service-item p {
+    margin: 0;
+}
 form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     color: #000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -102,9 +138,13 @@ form button:hover {
 
 <script>
 document.addEventListener("DOMContentLoaded", function () {
-    let scrollTexts = document.querySelectorAll('.scroll-text');
-    scrollTexts.forEach((scrollText) => {
-        scrollText.style.animation = "scroll-text 10s linear infinite";
+    let scrollTextsLeft = document.querySelectorAll('.scroll-text-left');
+    let scrollTextsRight = document.querySelectorAll('.scroll-text-right');
+    scrollTextsLeft.forEach((scrollText) => {
+        scrollText.style.animation = "scroll-text-left 20s linear infinite";
+    });
+    scrollTextsRight.forEach((scrollText) => {
+        scrollText.style.animation = "scroll-text-right 20s linear infinite";
     });
 });
 </script>
@@ -114,37 +154,33 @@ document.addEventListener("DOMContentLoaded", function () {
     <p>Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
 </div>
 
-<div class="section flex">
-    <div class="scroll-text">Web Development • Static Websites • Hugo SSG • Full-Stack Applications • Next.JS • Supabase • </div>
-    <div class="scroll-text">Web Development • Static Websites • Hugo SSG • Full-Stack Applications • Next.JS • Supabase • </div>
+<div class="scroll-container">
+    <div class="flex">
+        <div class="scroll-text scroll-text-left">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • </div>
+    </div>
+    <div class="flex">
+        <div class="scroll-text scroll-text-right">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • </div>
+    </div>
 </div>
 
 <div class="section">
     <h2 class="text-center">Our Services</h2>
-    <div class="container flex flex-col lg:flex-row gap-[2rem] lg:gap-[4rem] justify-center">
-        <div>
-            <h3 class="uppercase font-bold">Digital Marketing</h3>
-            <ul>
-                <li>SEO</li>
-                <li>Social Media Management</li>
-                <li>Content Marketing</li>
-            </ul>
+    <div class="container services-grid">
+        <div class="service-item">
+            <h3 class="uppercase font-bold">Media Buying</h3>
+            <p>Programmatic Buying, Direct Buys, Ad Networks</p>
         </div>
-        <div>
-            <h3 class="uppercase font-bold">Branding</h3>
-            <ul>
-                <li>Brand Strategy</li>
-                <li>Logo Design</li>
-                <li>Brand Identity</li>
-            </ul>
+        <div class="service-item">
+            <h3 class="uppercase font-bold">Local SEO</h3>
+            <p>Local Listings, Reviews Management, Geo-targeted SEO</p>
         </div>
-        <div>
-            <h3 class="uppercase font-bold">Web Development</h3>
-            <ul>
-                <li>Custom Websites</li>
-                <li>E-commerce Solutions</li>
-                <li>Website Maintenance</li>
-            </ul>
+        <div class="service-item">
+            <h3 class="uppercase font-bold">Lead Generation</h3>
+            <p>Quality Leads, Conversion Optimization, CRM Integration</p>
+        </div>
+        <div class="service-item">
+            <h3 class="uppercase font-bold">Digital Marketing Strategy</h3>
+            <p>Comprehensive Planning, Analytics, Execution</p>
         </div>
     </div>
 </div>
