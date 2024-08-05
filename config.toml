@@ -17,6 +17,7 @@ theme = 'PaperMod'
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
+  homeInfoMode = "profile" # This line sets the home page to use profile mode
 
 [params.profileMode]
   enabled = true
