@@ -17,7 +17,7 @@ theme = 'PaperMod'
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
-
+  
   [params.profileMode]
     enabled = true
     title = "Majana: Elevate Your Business"
@@ -26,23 +26,23 @@ theme = 'PaperMod'
     imageTitle = "Majana Logo"
     imageWidth = 120
     imageHeight = 120
-    [[params.profileMode.buttons]]
-      name = "Archive"
-      url = "/archive"
-    [[params.profileMode.buttons]]
-      name = "Github"
-      url = "https://github.com/Moshe-ship"
 
-  [params.socialIcons]
-    [[params.socialIcons]]
-      name = "github"
-      url = "https://github.com/Moshe-ship"
-    [[params.socialIcons]]
-      name = "linkedin"
-      url = "https://www.linkedin.com/in/yourprofile"
-    [[params.socialIcons]]
-      name = "twitter"
-      url = "https://twitter.com/yourprofile"
+  [[params.profileMode.buttons]]
+    name = "Archive"
+    url = "/archive"
+  [[params.profileMode.buttons]]
+    name = "Github"
+    url = "https://github.com/Moshe-ship"
+
+  [[params.socialIcons]]
+    name = "github"
+    url = "https://github.com/Moshe-ship"
+  [[params.socialIcons]]
+    name = "linkedin"
+    url = "https://www.linkedin.com/in/yourprofile"
+  [[params.socialIcons]]
+    name = "twitter"
+    url = "https://twitter.com/yourprofile"
 
 [social]
   github = "https://github.com/Moshe-ship"
