@@ -67,7 +67,7 @@ form button {
     cursor: pointer;
     border-radius: 3px;
     width: 100%;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
 }
 form button:hover {
@@ -149,8 +149,8 @@ form button:hover {
 }
 
 .btn {
-    padding: 15px 30px;
-    font-size: 1.2rem;
+    padding: 20px 40px;
+    font-size: 1.5rem;
     border-radius: 5px;
     margin: 10px 5px;
     text-decoration: none;
@@ -159,6 +159,7 @@ form button:hover {
     background-color: #4CAF50;
     color: white;
     border: none;
+    font-weight: bold;
 }
 .btn-primary:hover {
     background-color: #45a049;
