@@ -185,6 +185,11 @@ body.dark-mode {
 }
 </style>
 
+<div class="section text-center">
+    <a href="#contact-form" class="btn btn-primary">Hire Us</a>
+    <a href="/about" class="btn btn-secondary">Learn More</a>
+</div>
+
 <div class="section animated-lines">
     <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • X Ads • Local Growth • Website Building • Landing Pages •</div>
     <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • X Ads • Local Growth • Website Building • Landing Pages •</div>
@@ -227,4 +232,10 @@ body.dark-mode {
             <label>Your Email: <input type="email" name="email" required /></label>
         </p>
         <p>
-            <label>Your Message: <textarea name="messa
+            <label>Your Message: <textarea name="message" required></textarea></label>
+        </p>
+        <p>
+            <button type="submit">Send</button>
+        </p>
+    </form>
+</div>
