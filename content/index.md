@@ -1,5 +1,5 @@
 +++
-title = "MAJANA"
+title = "MAJANA: Your Growth Partner"
 description = "We cut your cost and maximize your marketing ROI with tailored strategies."
 +++
 
@@ -9,23 +9,30 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff;
+    background-color: var(--background);
+    color: var(--text);
 }
 h1, h2, h3 {
-    color: #7f5eff;  /* Updated trendy color */
+    color: #20009b;  /* Updated trendy color */
 }
 h1 {
     font-size: 4rem;  /* Increase the font size */
     text-transform: uppercase;
+    font-weight: bold;
 }
 h2 {
     font-size: 2.5rem;
-    border-bottom: 2px solid #7f5eff;
+    border-bottom: 2px solid #20009b;
     padding-bottom: 10px;
     margin-top: 40px;
 }
 h3 {
     font-size: 2rem;
+}
+.description {
+    font-size: 2rem;
+    font-style: italic;
+    color: #20009b;
 }
 p {
     margin: 20px 0;
@@ -57,17 +64,19 @@ form input, form textarea {
     border-radius: 3px;
 }
 form button {
-    background-color: #7f5eff;
+    background-color: #20009b;
     color: white;
     padding: 15px 20px;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: bold;
+    display: block;
+    margin: 0 auto;
 }
 form button:hover {
-    background-color: #6c4edb;
+    background-color: #1a007f;
 }
 .container {
     max-width: 1200px;
@@ -126,7 +135,7 @@ form button:hover {
 }
 
 .service-box {
-    border: 1px solid #7f5eff;
+    border: 1px solid #20009b;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -136,7 +145,7 @@ form button:hover {
 
 .service-icon {
     font-size: 3rem;
-    color: #7f5eff;
+    color: #20009b;
     margin-bottom: 10px;
 }
 
@@ -153,26 +162,28 @@ form button:hover {
 }
 
 .btn-primary {
-    background-color: #7f5eff;
+    background-color: #20009b;
     color: #fff;
-    border: 2px solid #7f5eff;
+    border: 2px solid #20009b;
 }
 .btn-primary:hover {
-    background-color: #6c4edb;
-    border-color: #6c4edb;
+    background-color: #1a007f;
+    border-color: #1a007f;
 }
 .btn-secondary {
     background-color: transparent;
-    color: #7f5eff;
-    border: 2px solid #7f5eff;
+    color: #20009b;
+    border: 2px solid #20009b;
 }
 .btn-secondary:hover {
-    color: #6c4edb;
-    border-color: #6c4edb;
+    color: #1a007f;
+    border-color: #1a007f;
 }
 </style>
 
 <div class="text-center">
+    <h1>MAJANA</h1>
+    <p class="description">Your Growth Partner</p>
     <a href="#contact-form" class="btn btn-primary">Hire Us</a>
     <a href="/about" class="btn btn-secondary">Learn More</a>
 </div>
@@ -183,6 +194,7 @@ form button:hover {
 </div>
 
 <div class="section">
+    <h2 class="text-center">Our Services</h2>
     <div class="container services">
         <div class="service-box">
             <div class="service-icon">📊</div>
