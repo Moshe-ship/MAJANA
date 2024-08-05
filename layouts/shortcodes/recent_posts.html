@@ -1,0 +1,10 @@
+<h2>Recent Blog Posts</h2>
+<ul>
+  {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p>{{ .Summary }}</p>
+    </li>
+  {{ end }}
+</ul>
+

@@ -7,6 +7,8 @@ description = "Discover how Majana's strategic marketing can help you achieve yo
 body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     padding: 0;
 }
@@ -37,6 +39,7 @@ form {
     margin: 40px auto;
     padding: 20px;
     background-color: #f9f9f9;
+    color: #000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -135,12 +138,24 @@ form button:hover {
     color: #4CAF50;
     margin-bottom: 10px;
 }
-</style>
 
-<div class="section text-center">
-    <h1 class="uppercase font-bold">Majana</h1>
-    <p>Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
-</div>
+#contact-button, #hire-button {
+    display: block;
+    margin: 40px auto;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    font-size: 1.2rem;
+}
+
+#contact-button:hover, #hire-button:hover {
+    background-color: #45a049;
+}
+</style>
 
 <div class="section animated-lines">
     <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
@@ -173,7 +188,7 @@ form button:hover {
     </div>
 </div>
 
-<div class="section">
+<div class="section" id="contact-section">
     <h2 class="text-center">Contact Us</h2>
     <p class="text-center">If you have any questions or want to work with us, feel free to contact us through the form below.</p>
     <form name="contact" method="POST" netlify>
