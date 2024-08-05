@@ -9,14 +9,26 @@ body {
     line-height: 1.6;
     background-color: #000;
     color: #fff;
+    margin: 0;
+    padding: 0;
 }
 h1, h2, h3 {
-    color: #2c3e50;
-    margin-top: 20px;
+    color: #4CAF50;
+}
+h1 {
+    font-size: 3rem;
 }
 h2 {
+    font-size: 2.5rem;
     border-bottom: 2px solid #4CAF50;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+h3 {
+    font-size: 2rem;
+}
+p {
+    margin: 20px 0;
 }
 ul {
     list-style-type: disc;
@@ -24,9 +36,10 @@ ul {
 }
 form {
     max-width: 600px;
-    margin: auto;
+    margin: 40px auto;
     padding: 20px;
     background-color: #f9f9f9;
+    color: #000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -80,10 +93,7 @@ form button:hover {
 </style>
 
 <div class="section text-center">
-    <h1 class="font-display uppercase text-[6rem] sm:text-[14vw] 2xl:text-[18rem] leading-[100%]">Majana</h1>
-</div>
-
-<div class="section text-center">
+    <h1 class="uppercase font-bold">Majana</h1>
     <p>Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
 </div>
 
