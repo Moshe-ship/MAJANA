@@ -5,110 +5,41 @@ description = "Discover how Majana's strategic marketing can help you achieve yo
 
 <style>
 body {
-    font-family: 'Bebas Neue', 'Open Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    background-color: #000;
+    color: #fff;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 h1, h2, h3 {
-    color: var(--text-color);
-    margin: 0;
+    color: #4CAF50;
+}
+h1 {
+    font-size: 3rem;
 }
 h2 {
-    font-size: 4rem;
-    text-align: center;
-    margin: 2rem 0;
+    font-size: 2.5rem;
+    border-bottom: 2px solid #4CAF50;
+    padding-bottom: 10px;
+    margin-top: 40px;
 }
-.section {
-    padding: 6rem 1.5rem;
+h3 {
+    font-size: 2rem;
 }
-.text-center {
-    text-align: center;
+p {
+    margin: 20px 0;
 }
-.flex {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.scroll-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    overflow: hidden;
-    white-space: nowrap;
-    position: relative;
-    width: 100%;
-}
-.scroll-text {
-    display: inline-block;
-    font-size: 1.5rem;
-    font-weight: bold;
-    white-space: nowrap;
-    position: absolute;
-    width: 100%;
-}
-.scroll-text-left {
-    animation: scroll-text-left 20s linear infinite;
-}
-.scroll-text-right {
-    animation: scroll-text-right 20s linear infinite;
-}
-@keyframes scroll-text-left {
-    0% {
-        transform: translateX(100%);
-    }
-    100% {
-        transform: translateX(-100%);
-    }
-}
-@keyframes scroll-text-right {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
-}
-.uppercase {
-    text-transform: uppercase;
-}
-.font-bold {
-    font-weight: bold;
-}
-.container {
-    max-width: 1200px;
-    margin: auto;
-}
-.services-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-}
-.service-item {
-    width: calc(50% - 2rem);
-    background-color: var(--bg-secondary);
-    padding: 2rem;
-    text-align: center;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-.service-item:hover {
-    transform: scale(1.05);
-}
-.service-item h3 {
-    margin-bottom: 1rem;
-}
-.service-item p {
-    margin: 0;
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
 }
 form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: var(--bg-secondary);
-    color: var(--text-color);
+    background-color: #f9f9f9;
+    color: #000;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -137,58 +68,114 @@ form button {
 form button:hover {
     background-color: #45a049;
 }
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+.section {
+    padding: 60px 0;
+}
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.text-center {
+    text-align: center;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.font-bold {
+    font-weight: bold;
+}
+
+.marquee {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    background: black;
+    padding: 1rem 0;
+    margin: 0;
+}
+
+.marquee span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee 15s linear infinite;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.marquee2 {
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    background: black;
+    padding: 1rem 0;
+    margin: 0;
+    transform: rotateX(180deg);
+}
+
+.marquee2 span {
+    display: inline-block;
+    padding-left: 100%;
+    animation: marquee2 15s linear infinite;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #4CAF50;
+    transform: rotateX(180deg);
+}
+
+@keyframes marquee {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(-100%, 0); }
+}
+
+@keyframes marquee2 {
+    0% { transform: translate(0, 0); }
+    100% { transform: translate(100%, 0); }
+}
 </style>
 
-<script>
-document.addEventListener("DOMContentLoaded", function () {
-    let scrollTextsLeft = document.querySelectorAll('.scroll-text-left');
-    let scrollTextsRight = document.querySelectorAll('.scroll-text-right');
-    scrollTextsLeft.forEach((scrollText) => {
-        scrollText.style.animation = "scroll-text-left 20s linear infinite";
-    });
-    scrollTextsRight.forEach((scrollText) => {
-        scrollText.style.animation = "scroll-text-right 20s linear infinite";
-    });
-});
-</script>
+<div class="section text-center">
+    <h1 class="uppercase font-bold">Majana</h1>
+    <p>Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
+</div>
 
-<div class="scroll-container">
-    <div class="scroll-text scroll-text-left">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • Google Maps • X ads • </div>
-    <div class="scroll-text scroll-text-right">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • Google Maps • X ads • </div>
+<div class="marquee">
+    <span>Google Ranking • Google Maps • Media Buying • Local SEO • Lead Generation • Digital Marketing Strategy</span>
+</div>
+<div class="marquee2">
+    <span>Google Ranking • Google Maps • Media Buying • Local SEO • Lead Generation • Digital Marketing Strategy</span>
 </div>
 
 <div class="section">
     <h2 class="text-center">Our Services</h2>
-    <div class="container services-grid">
-        <div class="service-item">
+    <div class="container flex flex-col lg:flex-row gap-4 lg:gap-8 justify-center">
+        <div class="lg:max-w-[50%] 2xl:max-w-[33%] text-center">
             <h3 class="uppercase font-bold">Media Buying</h3>
-            <p>Programmatic Buying, Direct Buys, Ad Networks</p>
+            <p>Effective media buying strategies to maximize your ROI.</p>
         </div>
-        <div class="service-item">
+        <div class="lg:max-w-[50%] 2xl:max-w-[33%] text-center">
             <h3 class="uppercase font-bold">Local SEO</h3>
-            <p>Local Listings, Reviews Management, Geo-targeted SEO</p>
+            <p>Boost your local presence and attract more customers.</p>
         </div>
-        <div class="service-item">
+        <div class="lg:max-w-[50%] 2xl:max-w-[33%] text-center">
             <h3 class="uppercase font-bold">Lead Generation</h3>
-            <p>Quality Leads, Conversion Optimization, CRM Integration</p>
+            <p>Generate high-quality leads for your business.</p>
         </div>
-        <div class="service-item">
+        <div class="lg:max-w-[50%] 2xl:max-w-[33%] text-center">
             <h3 class="uppercase font-bold">Digital Marketing Strategy</h3>
-            <p>Comprehensive Planning, Analytics, Execution</p>
+            <p>Customized digital marketing strategies for your business.</p>
         </div>
     </div>
-</div>
-
-<div class="section">
-    <h2 class="text-center">Recent Blog Posts</h2>
-    <ul class="container">
-        {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
-        <li>
-            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
-            <p>{{ .Summary }}</p>
-        </li>
-        {{ end }}
-    </ul>
 </div>
 
 <div class="section">
