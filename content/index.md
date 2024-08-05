@@ -10,15 +10,25 @@ body {
     margin: 0;
     padding: 0;
 }
-h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: var(--title-color);
+h1, h2, h3 {
+    color: #3e2c82;
 }
-h1 span {
+h1.title {
+    font-size: 3rem;
+    font-weight: bold;
+}
+h1.title span {
     font-weight: normal;
     font-style: italic;
+}
+h2 {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #3e2c82;
+    padding-bottom: 10px;
+    margin-top: 40px;
+}
+h3 {
+    font-size: 2rem;
 }
 p {
     margin: 20px 0;
@@ -31,7 +41,7 @@ form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: var(--form-bg);
+    background-color: #f9f9f9;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -50,18 +60,18 @@ form input, form textarea {
     border-radius: 3px;
 }
 form button {
-    background-color: var(--button-bg);
-    color: var(--button-text);
+    background-color: #3e2c82;
+    color: white;
     padding: 15px 20px;
     border: none;
     cursor: pointer;
     border-radius: 3px;
-    font-size: 1.2rem;
-    font-weight: bold;
     width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
 }
 form button:hover {
-    background-color: var(--button-hover-bg);
+    background-color: #322467;
 }
 .container {
     max-width: 1200px;
@@ -97,7 +107,7 @@ form button:hover {
 }
 .animated-line {
     display: inline-block;
-    animation: scroll-left 30s linear infinite; /* Slowed down animation */
+    animation: scroll-left 15s linear infinite;
 }
 .animated-line:nth-child(2) {
     animation-direction: reverse;
@@ -118,77 +128,26 @@ form button:hover {
     gap: 2rem;
     justify-content: center;
 }
-
 .service-box {
-    border: 1px solid var(--service-border);
+    border: 1px solid #3e2c82;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
     flex: 1 1 calc(33.333% - 2rem);
     box-sizing: border-box;
 }
-
 .service-icon {
     font-size: 3rem;
-    color: var(--service-icon);
+    color: #3e2c82;
     margin-bottom: 10px;
 }
 
-.btn {
-    display: inline-block;
-    padding: 15px 30px;
-    font-size: 1.2rem;
-    font-weight: bold;
-    border-radius: 5px;
-    text-align: center;
-    cursor: pointer;
-    text-decoration: none;
-    margin: 20px 10px;
-}
-
-.btn-primary {
-    background-color: var(--button-bg);
-    color: var(--button-text);
-    border: 2px solid var(--button-bg);
-}
-.btn-primary:hover {
-    background-color: var(--button-hover-bg);
-    border-color: var(--button-hover-bg);
-}
-.btn-secondary {
-    background-color: transparent;
-    color: var(--button-bg);
-    border: 2px solid var(--button-bg);
-}
-.btn-secondary:hover {
-    color: var(--button-hover-bg);
-    border-color: var(--button-hover-bg);
-}
-
-/* Custom Colors */
-:root {
-    --title-color: #3e2c82;
-    --form-bg: #f9f9f9;
-    --button-bg: #3e2c82;
-    --button-text: #fff;
-    --button-hover-bg: #2e1c62;
-    --service-border: #3e2c82;
-    --service-icon: #3e2c82;
-}
-body.dark-mode {
-    --form-bg: #333;
-    --button-text: #fff;
-    --button-bg: #3e2c82;
-    --button-hover-bg: #2e1c62;
-    --service-border: #3e2c82;
-    --service-icon: #3e2c82;
+@media (max-width: 768px) {
+    .service-box {
+        flex: 1 1 100%;
+    }
 }
 </style>
-
-<div class="section text-center">
-    <a href="#contact-form" class="btn btn-primary">Hire Us</a>
-    <a href="/about" class="btn btn-secondary">Learn More</a>
-</div>
 
 <div class="section animated-lines">
     <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • X Ads • Local Growth • Website Building • Landing Pages •</div>
