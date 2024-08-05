@@ -1,6 +1,6 @@
 +++
-title = "MAJANA: We cut your cost"
-description = "Your digital growth partner. Helping you achieve success through tailored marketing strategies."
+title = "MAJANA: We Cut Your Cost!"
+description = "Your digital growth partner. We maximize your ROI with tailored strategies"
 +++
 
 <style>
@@ -9,30 +9,16 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--background);
-    color: var(--text);
-}
-h1, h2, h3 {
-    color: var(--title-color);
 }
 h1 {
     font-size: 4rem;
     text-transform: uppercase;
     font-weight: bold;
-}
-h2 {
-    font-size: 2.5rem;
-    border-bottom: 2px solid var(--title-color);
-    padding-bottom: 10px;
-    margin-top: 40px;
-}
-h3 {
-    font-size: 2rem;
-}
-.description {
-    font-size: 1.5rem;
-    font-style: italic;
     color: var(--title-color);
+}
+h1 span {
+    font-weight: normal;
+    font-style: italic;
 }
 p {
     margin: 20px 0;
@@ -179,12 +165,21 @@ form button:hover {
     color: var(--button-hover-bg);
     border-color: var(--button-hover-bg);
 }
+
+/* Custom Colors */
+:root {
+    --title-color: #3e2c82;
+    --form-bg: #f9f9f9;
+    --button-bg: #3e2c82;
+    --button-text: #fff;
+    --button-hover-bg: #2e1c62;
+    --service-border: #3e2c82;
+    --service-icon: #3e2c82;
+}
 </style>
 
 <div class="text-center">
-    <h1>MAJANA</h1>
-    <p class="description">We cut your cost</p>
-    <p class="description">Your digital growth partner. Helping you achieve success through tailored marketing strategies.</p>
+    <h1>MAJANA<span>: We Cut Your Cost!</span></h1>
     <a href="#contact-form" class="btn btn-primary">Hire Us</a>
     <a href="/about" class="btn btn-secondary">Learn More</a>
 </div>

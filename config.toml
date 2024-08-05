@@ -17,7 +17,6 @@ theme = 'PaperMod'
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
-  customCSS = []
 
 [social]
   github = "https://github.com/Moshe-ship"
