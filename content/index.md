@@ -5,9 +5,7 @@ description = "Discover how Majana's strategic marketing can help you achieve yo
 
 # Welcome to Majana
 
-![Welcome to Majana](https://majana.netlify.app/images/branding.jpg)
-
-At Majana, we believe in the power of strategic marketing to transform your business. Our team of experts will work with you to develop tailored strategies that drive growth, increase brand awareness, and elevate your business to new heights.
+Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.
 
 ## Our Services
 
@@ -26,17 +24,23 @@ At Majana, we believe in the power of strategic marketing to transform your busi
 - E-commerce Solutions
 - Website Maintenance
 
-## Why Choose Us?
+## Recent Blog Posts
 
-- **Expert Team**: Our team consists of experienced professionals who are passionate about marketing.
-- **Proven Results**: We have a track record of delivering successful campaigns that drive results.
-- **Customized Solutions**: We tailor our services to meet the unique needs of your business.
+<h2>Recent Blog Posts</h2>
+<ul>
+  {{ range first 5 (where .Site.RegularPages "Section" "blog") }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <p>{{ .Summary }}</p>
+    </li>
+  {{ end }}
+</ul>
 
-![Marketing Strategy](https://majana.netlify.app/images/marketing-strategy.jpg)
+## Contact Us
 
-## Ready to Take Your Business to the Next Level?
+If you have any questions or want to work with us, feel free to contact us through the form below.
 
-<form name="contact" method="POST" data-netlify="true" style="max-width: 600px; margin: auto;">
+<form name="contact" method="POST" data-netlify="true" style="max-width: 600px; margin: auto; padding: 20px; background-color: #f9f9f9; border-radius: 5px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
   <p>
     <label>Your Name: <input type="text" name="name" required style="width: 100%; padding: 10px; margin: 5px 0;" /></label>
   </p>
@@ -44,7 +48,7 @@ At Majana, we believe in the power of strategic marketing to transform your busi
     <label>Your Email: <input type="email" name="email" required style="width: 100%; padding: 10px; margin: 5px 0;" /></label>
   </p>
   <p>
-    <label>Your Message: <textarea name="message" style="width: 100%; padding: 10px; margin: 5px 0;"></textarea></label>
+    <label>Your Message: <textarea name="message" required style="width: 100%; padding: 10px; margin: 5px 0;"></textarea></label>
   </p>
   <p>
     <button type="submit" style="background-color: #4CAF50; color: white; padding: 15px 20px; border: none; cursor: pointer;">Send</button>
