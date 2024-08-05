@@ -147,6 +147,7 @@ form button:hover {
     text-align: center;
     cursor: pointer;
     text-decoration: none;
+    margin-top: 20px;
 }
 
 .btn:hover {
@@ -155,12 +156,11 @@ form button:hover {
 </style>
 
 <div class="section animated-lines">
-    <div class="animated-line">Google Ads • Local SEO • Google Ranking • Technical SEO • Media Buying • META Ads • X Ads • TikTok Ads •</div>
-    <div class="animated-line">Google Ads • Local SEO • X ads • Technical SEO • Media Buying • META Ads • Google Ranking • TikTok Ads •</div>
+    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
+    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
 </div>
 
 <div class="section">
-    <h2 class="text-center">Our Services</h2>
     <div class="container services">
         <div class="service-box">
             <div class="service-icon">📊</div>
@@ -185,10 +185,14 @@ form button:hover {
     </div>
 </div>
 
+<div class="text-center">
+    <a href="#contact-form" class="btn">Hire Us</a>
+</div>
+
 <div class="section">
     <h2 class="text-center">Contact Us</h2>
     <p class="text-center">If you have any questions or want to work with us, feel free to contact us through the form below.</p>
-    <form name="contact" method="POST" netlify id="contact-form">
+    <form id="contact-form" method='POST' name='contact'><input type='hidden' name='form-name' value='contact' />
         <p>
             <label>Your Name: <input type="text" name="name" required /></label>
         </p>

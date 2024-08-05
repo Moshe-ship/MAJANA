@@ -21,12 +21,6 @@ theme = 'PaperMod'
   # Custom CSS inclusion
   customCSS = ["css/custom.css"]
 
-  # Button parameters
-  [[params.buttons]]
-    name = "Hire Us"
-    url = "#contact-form"
-    class = "btn btn-primary"
-
 [social]
   github = "https://github.com/Moshe-ship"
   linkedin = "https://www.linkedin.com/in/yourprofile"
