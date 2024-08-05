@@ -17,11 +17,14 @@ theme = 'PaperMod'
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
+
+  # Custom CSS inclusion
   customCSS = ["css/custom.css"]
 
+  # Button parameters
   [[params.buttons]]
     name = "Hire Us"
-    url = "#contact-form"  # Assuming the contact form has an ID for scrolling
+    url = "#contact-form"
     class = "btn btn-primary"
 
 [social]
