@@ -11,37 +11,31 @@ body {
     padding: 0;
 }
 h1, h2, h3 {
-    color: #000000; /* Ensuring dark text for contrast */
+    color: #4CAF50; /* Green color for contrast */
 }
 h1.title {
     font-size: 3rem;
     font-weight: bold;
-    color: #000000; /* Dark text for contrast */
 }
 h1.title span {
     font-weight: normal;
     font-style: italic;
-    color: #333333; /* Slightly lighter for contrast */
 }
 h2 {
     font-size: 2.5rem;
-    border-bottom: 2px solid #000000; /* Dark border for contrast */
+    border-bottom: 2px solid #4CAF50;
     padding-bottom: 10px;
     margin-top: 40px;
-    color: #000000; /* Dark text for contrast */
 }
 h3 {
     font-size: 2rem;
-    color: #000000; /* Dark text for contrast */
 }
 p {
     margin: 20px 0;
-    color: #000000; /* Dark text for contrast */
 }
 ul {
     list-style-type: disc;
     margin-left: 20px;
-    color: #000000; /* Dark text for contrast */
 }
 form {
     max-width: 600px;
@@ -53,12 +47,10 @@ form {
 }
 form p {
     margin-bottom: 15px;
-    color: #000000; /* Dark text for contrast */
 }
 form label {
     display: block;
     margin-bottom: 5px;
-    color: #000000; /* Dark text for contrast */
 }
 form input, form textarea {
     width: 100%;
@@ -66,10 +58,9 @@ form input, form textarea {
     margin: 5px 0;
     border: 1px solid #ccc;
     border-radius: 3px;
-    color: #000000; /* Dark text for contrast */
 }
 form button {
-    background-color: #4CAF50; /* Green background */
+    background-color: #4CAF50;
     color: white;
     padding: 15px 20px;
     border: none;
@@ -116,7 +107,7 @@ form button:hover {
 }
 .animated-line {
     display: inline-block;
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 15s linear infinite;
 }
 .animated-line:nth-child(2) {
     animation-direction: reverse;
