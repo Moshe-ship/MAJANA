@@ -17,7 +17,6 @@ theme = 'PaperMod'
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
-  customCSS = ["css/custom.css"]
 
 [social]
   github = "https://github.com/Moshe-ship"
@@ -48,3 +47,8 @@ theme = 'PaperMod'
   name = "Contact"
   url = "/contact/"
   weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
