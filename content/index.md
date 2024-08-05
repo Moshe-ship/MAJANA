@@ -12,7 +12,7 @@ body {
     background-color: #fff;
 }
 h1, h2, h3 {
-    color: #ff6f61;  /* Updated trendy color */
+    color: #7f5eff;  /* Updated trendy color */
 }
 h1 {
     font-size: 4rem;  /* Increase the font size */
@@ -20,7 +20,7 @@ h1 {
 }
 h2 {
     font-size: 2.5rem;
-    border-bottom: 2px solid #ff6f61;
+    border-bottom: 2px solid #7f5eff;
     padding-bottom: 10px;
     margin-top: 40px;
 }
@@ -57,15 +57,17 @@ form input, form textarea {
     border-radius: 3px;
 }
 form button {
-    background-color: #ff6f61;
+    background-color: #7f5eff;
     color: white;
     padding: 15px 20px;
     border: none;
     cursor: pointer;
     border-radius: 3px;
+    font-size: 1rem;
+    font-weight: bold;
 }
 form button:hover {
-    background-color: #e65c53;
+    background-color: #6c4edb;
 }
 .container {
     max-width: 1200px;
@@ -124,7 +126,7 @@ form button:hover {
 }
 
 .service-box {
-    border: 1px solid #ff6f61;
+    border: 1px solid #7f5eff;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -134,7 +136,7 @@ form button:hover {
 
 .service-icon {
     font-size: 3rem;
-    color: #ff6f61;
+    color: #7f5eff;
     margin-bottom: 10px;
 }
 
@@ -143,8 +145,6 @@ form button:hover {
     padding: 15px 30px;
     font-size: 1.2rem;  /* Adjusted font size */
     font-weight: bold;
-    color: #fff;
-    border: none;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
@@ -153,16 +153,22 @@ form button:hover {
 }
 
 .btn-primary {
-    background-color: #ff6f61;
+    background-color: #7f5eff;
+    color: #fff;
+    border: 2px solid #7f5eff;
 }
 .btn-primary:hover {
-    background-color: #e65c53;
+    background-color: #6c4edb;
+    border-color: #6c4edb;
 }
 .btn-secondary {
-    background-color: #4CAF50;
+    background-color: transparent;
+    color: #7f5eff;
+    border: 2px solid #7f5eff;
 }
 .btn-secondary:hover {
-    background-color: #45a049;
+    color: #6c4edb;
+    border-color: #6c4edb;
 }
 </style>
 
