@@ -17,7 +17,7 @@ theme = 'PaperMod'
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
-  
+
   [params.profileMode]
     enabled = true
     title = "Majana"
