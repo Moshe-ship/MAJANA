@@ -18,6 +18,35 @@ theme = 'PaperMod'
   ShowCategory = true
   defaultTheme = "auto"
 
+  [params.profileMode]
+    enabled = true
+    title = "Majana"
+    subtitle = "Elevate Your Business with Strategic Marketing"
+    imageUrl = "https://majana.netlify.app/images/branding.jpg"
+    imageTitle = "Majana Logo"
+    imageWidth = 120
+    imageHeight = 120
+    [[params.profileMode.buttons]]
+      name = "Services"
+      url = "/services"
+    [[params.profileMode.buttons]]
+      name = "Contact"
+      url = "/contact"
+    [[params.profileMode.buttons]]
+      name = "Github"
+      url = "https://github.com/Moshe-ship"
+  
+  [params.socialIcons]
+    [[params.socialIcons]]
+      name = "Github"
+      url = "https://github.com/Moshe-ship"
+    [[params.socialIcons]]
+      name = "LinkedIn"
+      url = "https://www.linkedin.com/in/yourprofile"
+    [[params.socialIcons]]
+      name = "Twitter"
+      url = "https://twitter.com/yourprofile"
+
 [social]
   github = "https://github.com/Moshe-ship"
   linkedin = "https://www.linkedin.com/in/yourprofile"

@@ -9,15 +9,11 @@ body {
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    overflow-x: hidden; /* Prevent horizontal scroll */
 }
 h1, h2, h3 {
     color: var(--text-color);
     margin: 0;
-}
-h1 {
-    font-size: 6rem;
-    text-align: center;
-    margin-top: 20vh;
 }
 h2 {
     font-size: 4rem;
@@ -39,13 +35,18 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
 }
 .scroll-text {
     display: inline-block;
     font-size: 1.5rem;
     font-weight: bold;
     white-space: nowrap;
-    margin: 0;
+    position: absolute;
+    width: 100%;
 }
 .scroll-text-left {
     animation: scroll-text-left 20s linear infinite;
@@ -151,18 +152,9 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 </script>
 
-<div class="section text-center">
-    <h1 class="uppercase font-bold">Majana</h1>
-    <p>Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
-</div>
-
 <div class="scroll-container">
-    <div class="flex">
-        <div class="scroll-text scroll-text-left">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • </div>
-    </div>
-    <div class="flex">
-        <div class="scroll-text scroll-text-right">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • </div>
-    </div>
+    <div class="scroll-text scroll-text-left">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • Google Maps • X ads • </div>
+    <div class="scroll-text scroll-text-right">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • Google Maps • X ads • </div>
 </div>
 
 <div class="section">
