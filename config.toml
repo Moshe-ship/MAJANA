@@ -9,13 +9,15 @@ theme = 'PaperMod'
   ShowReadingTime = false
   ShowShareButtons = true
   ShowPostNavLinks = true
-  ShowBreadCrumbs = true
+  ShowBreadCrumbs = false
   disableSummary = false
   ShowToc = false
   TocOpen = false
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
+  buttonText = "Hire Us"
+  buttonLink = "#contact-section"
 
 [social]
   github = "https://github.com/Moshe-ship"
