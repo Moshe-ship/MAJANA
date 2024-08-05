@@ -18,31 +18,34 @@ theme = 'PaperMod'
   ShowCategory = true
   defaultTheme = "auto"
 
-  [params.profileMode]
-    enabled = true
-    title = "Majana: Elevate Your Business"
-    subtitle = "Strategic Marketing for Business Growth"
-    imageUrl = "https://majana.netlify.app/images/branding.jpg"
-    imageTitle = "Majana Logo"
-    imageWidth = 120
-    imageHeight = 120
-    [[params.profileMode.buttons]]
-      name = "Archive"
-      url = "/archive"
-    [[params.profileMode.buttons]]
-      name = "Github"
-      url = "https://github.com/Moshe-ship"
+[params.profileMode]
+  enabled = true
+  title = "Majana: Elevate Your Business"
+  subtitle = "Strategic Marketing for Business Growth"
+  imageUrl = "https://majana.netlify.app/images/branding.jpg"
+  imageTitle = "Majana Logo"
+  imageWidth = 120
+  imageHeight = 120
 
-  [params.socialIcons]
-    [[params.socialIcons]]
-      name = "github"
-      url = "https://github.com/Moshe-ship"
-    [[params.socialIcons]]
-      name = "linkedin"
-      url = "https://www.linkedin.com/in/yourprofile"
-    [[params.socialIcons]]
-      name = "twitter"
-      url = "https://twitter.com/yourprofile"
+[[params.profileMode.buttons]]
+  name = "Archive"
+  url = "/archive"
+
+[[params.profileMode.buttons]]
+  name = "Github"
+  url = "https://github.com/Moshe-ship"
+
+[[params.socialIcons]]
+  name = "github"
+  url = "https://github.com/Moshe-ship"
+
+[[params.socialIcons]]
+  name = "linkedin"
+  url = "https://www.linkedin.com/in/yourprofile"
+
+[[params.socialIcons]]
+  name = "twitter"
+  url = "https://twitter.com/yourprofile"
 
 [social]
   github = "https://github.com/Moshe-ship"
