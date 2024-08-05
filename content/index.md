@@ -1,6 +1,6 @@
 +++
-title = "MAJANA: Your Growth Partner"
-description = "We cut your cost and maximize your marketing ROI with tailored strategies."
+title = "MAJANA: We cut your cost"
+description = "Your digital growth partner. Helping you achieve success through tailored marketing strategies."
 +++
 
 <style>
@@ -13,16 +13,16 @@ body {
     color: var(--text);
 }
 h1, h2, h3 {
-    color: #20009b;  /* Updated trendy color */
+    color: var(--title-color);
 }
 h1 {
-    font-size: 4rem;  /* Increase the font size */
+    font-size: 4rem;
     text-transform: uppercase;
     font-weight: bold;
 }
 h2 {
     font-size: 2.5rem;
-    border-bottom: 2px solid #20009b;
+    border-bottom: 2px solid var(--title-color);
     padding-bottom: 10px;
     margin-top: 40px;
 }
@@ -30,9 +30,9 @@ h3 {
     font-size: 2rem;
 }
 .description {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: italic;
-    color: #20009b;
+    color: var(--title-color);
 }
 p {
     margin: 20px 0;
@@ -45,7 +45,7 @@ form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #f9f9f9;
+    background-color: var(--form-bg);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
@@ -64,8 +64,8 @@ form input, form textarea {
     border-radius: 3px;
 }
 form button {
-    background-color: #20009b;
-    color: white;
+    background-color: var(--button-bg);
+    color: var(--button-text);
     padding: 15px 20px;
     border: none;
     cursor: pointer;
@@ -76,7 +76,7 @@ form button {
     margin: 0 auto;
 }
 form button:hover {
-    background-color: #1a007f;
+    background-color: var(--button-hover-bg);
 }
 .container {
     max-width: 1200px;
@@ -112,7 +112,7 @@ form button:hover {
 }
 .animated-line {
     display: inline-block;
-    animation: scroll-left 20s linear infinite;  /* Slower speed */
+    animation: scroll-left 20s linear infinite;
 }
 .animated-line:nth-child(2) {
     animation-direction: reverse;
@@ -135,7 +135,7 @@ form button:hover {
 }
 
 .service-box {
-    border: 1px solid #20009b;
+    border: 1px solid var(--service-border);
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -145,14 +145,14 @@ form button:hover {
 
 .service-icon {
     font-size: 3rem;
-    color: #20009b;
+    color: var(--service-icon);
     margin-bottom: 10px;
 }
 
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    font-size: 1.2rem;  /* Adjusted font size */
+    font-size: 1.2rem;
     font-weight: bold;
     border-radius: 5px;
     text-align: center;
@@ -162,28 +162,29 @@ form button:hover {
 }
 
 .btn-primary {
-    background-color: #20009b;
-    color: #fff;
-    border: 2px solid #20009b;
+    background-color: var(--button-bg);
+    color: var(--button-text);
+    border: 2px solid var(--button-bg);
 }
 .btn-primary:hover {
-    background-color: #1a007f;
-    border-color: #1a007f;
+    background-color: var(--button-hover-bg);
+    border-color: var(--button-hover-bg);
 }
 .btn-secondary {
     background-color: transparent;
-    color: #20009b;
-    border: 2px solid #20009b;
+    color: var(--button-bg);
+    border: 2px solid var(--button-bg);
 }
 .btn-secondary:hover {
-    color: #1a007f;
-    border-color: #1a007f;
+    color: var(--button-hover-bg);
+    border-color: var(--button-hover-bg);
 }
 </style>
 
 <div class="text-center">
     <h1>MAJANA</h1>
-    <p class="description">Your Growth Partner</p>
+    <p class="description">We cut your cost</p>
+    <p class="description">Your digital growth partner. Helping you achieve success through tailored marketing strategies.</p>
     <a href="#contact-form" class="btn btn-primary">Hire Us</a>
     <a href="/about" class="btn btn-secondary">Learn More</a>
 </div>
