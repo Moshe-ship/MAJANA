@@ -1,6 +1,6 @@
 +++
-title = "Majana: Elevate Your Business with Strategic Marketing"
-description = "Discover how Majana's strategic marketing can help you achieve your business goals."
+title = "MAJANA"
+description = "We cut your cost and maximize your marketing ROI with tailored strategies."
 +++
 
 <style>
@@ -9,16 +9,18 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #fff;  /* Add background color */
 }
 h1, h2, h3 {
-    color: #4CAF50;
+    color: #7f5eff;
 }
 h1 {
-    font-size: 3rem;
+    font-size: 4rem;  /* Increase the font size */
+    text-transform: uppercase;
 }
 h2 {
     font-size: 2.5rem;
-    border-bottom: 2px solid #4CAF50;
+    border-bottom: 2px solid #7f5eff;
     padding-bottom: 10px;
     margin-top: 40px;
 }
@@ -55,7 +57,7 @@ form input, form textarea {
     border-radius: 3px;
 }
 form button {
-    background-color: #4CAF50;
+    background-color: #7f5eff;
     color: white;
     padding: 15px 20px;
     border: none;
@@ -63,7 +65,7 @@ form button {
     border-radius: 3px;
 }
 form button:hover {
-    background-color: #45a049;
+    background-color: #6a4edc;
 }
 .container {
     max-width: 1200px;
@@ -122,7 +124,7 @@ form button:hover {
 }
 
 .service-box {
-    border: 1px solid #4CAF50;
+    border: 1px solid #7f5eff;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -132,7 +134,7 @@ form button:hover {
 
 .service-icon {
     font-size: 3rem;
-    color: #4CAF50;
+    color: #7f5eff;
     margin-bottom: 10px;
 }
 
@@ -142,22 +144,23 @@ form button:hover {
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
-    background-color: #4CAF50;
+    background-color: #7f5eff;
     border: none;
     border-radius: 5px;
     text-align: center;
     cursor: pointer;
     text-decoration: none;
-    margin-top: 20px;
+    margin: 20px 10px;
 }
 
 .btn:hover {
-    background-color: #45a049;
+    background-color: #6a4edc;
 }
 </style>
 
 <div class="text-center">
     <a href="#contact-form" class="btn">Hire Us</a>
+    <a href="#learn-more" class="btn">Learn More</a>
 </div>
 
 <div class="section animated-lines">
@@ -188,6 +191,11 @@ form button:hover {
             <p>Comprehensive digital marketing strategies to help you achieve your business goals.</p>
         </div>
     </div>
+</div>
+
+<div id="learn-more" class="section">
+    <h2 class="text-center">Learn More About Us</h2>
+    <p class="text-center">Find out how Majana can transform your business with strategic marketing solutions tailored to your needs.</p>
 </div>
 
 <div class="section">
