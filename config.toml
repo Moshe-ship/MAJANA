@@ -5,6 +5,7 @@ theme = 'PaperMod'
 
 [params]
   description = "Majana: Elevate Your Business with Strategic Marketing"
+  images = ["https://majana.netlify.app/images/branding.jpg"]
   ShowReadingTime = false
   ShowShareButtons = true
   ShowPostNavLinks = true
@@ -16,7 +17,7 @@ theme = 'PaperMod'
   ShowTags = true
   ShowCategory = true
   defaultTheme = "auto"
-  
+
   [params.profileMode]
     enabled = true
     title = "Majana: Elevate Your Business"
