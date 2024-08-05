@@ -1,6 +1,6 @@
 +++
 title = "MAJANA: We Cut Your Cost!"
-description = "Your digital growth partner. We maximize your ROI with tailored strategies"
+description = "Your Digital Growth Partner. We maximize your ROI with Tested and Tailored Strategies"
 +++
 
 <style>
@@ -58,8 +58,7 @@ form button {
     border-radius: 3px;
     font-size: 1.2rem;
     font-weight: bold;
-    display: block;
-    margin: 0 auto;
+    width: 100%;
 }
 form button:hover {
     background-color: var(--button-hover-bg);
@@ -172,6 +171,14 @@ form button:hover {
     --form-bg: #f9f9f9;
     --button-bg: #3e2c82;
     --button-text: #fff;
+    --button-hover-bg: #2e1c62;
+    --service-border: #3e2c82;
+    --service-icon: #3e2c82;
+}
+body.dark-mode {
+    --form-bg: #333;
+    --button-text: #fff;
+    --button-bg: #3e2c82;
     --button-hover-bg: #2e1c62;
     --service-border: #3e2c82;
     --service-icon: #3e2c82;
