@@ -107,7 +107,7 @@ form button:hover {
 }
 .animated-line {
     display: inline-block;
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 20s linear infinite;
 }
 .animated-line:nth-child(2) {
     animation-direction: reverse;
@@ -149,10 +149,10 @@ form button:hover {
 }
 
 .btn {
-    padding: 10px 20px;
+    padding: 15px 30px;
     font-size: 1.2rem;
     border-radius: 5px;
-    margin: 10px;
+    margin: 10px 5px;
     text-decoration: none;
 }
 .btn-primary {
@@ -172,10 +172,25 @@ form button:hover {
     background-color: #4CAF50;
     color: white;
 }
+.animated-text {
+    animation: text-flicker 1s infinite alternate;
+}
+
+@keyframes text-flicker {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 </style>
 
 <div class="text-center">
-    <a href="#contact-form" class="btn btn-primary">Hire Us</a>
+    <a href="#contact-form" class="btn btn-primary animated-text">Hire Us</a>
     <a href="/about" class="btn btn-secondary">Learn More</a>
 </div>
 
