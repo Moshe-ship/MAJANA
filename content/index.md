@@ -100,9 +100,18 @@ form button:hover {
 }
 </style>
 
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    let scrollTexts = document.querySelectorAll('.scroll-text');
+    scrollTexts.forEach((scrollText) => {
+        scrollText.style.animation = "scroll-text 10s linear infinite";
+    });
+});
+</script>
+
 <div class="section text-center">
     <h1 class="uppercase font-bold">Majana</h1>
-    <p>Welcome to Majana, where we elevate your business through strategic marketing.</p>
+    <p>Welcome to Majana, where we elevate your business through strategic marketing. Our team of experts is dedicated to helping you achieve your business goals with tailored marketing strategies.</p>
 </div>
 
 <div class="section flex">
@@ -112,7 +121,7 @@ form button:hover {
 
 <div class="section">
     <h2 class="text-center">Our Services</h2>
-    <div class="container flex">
+    <div class="container flex flex-col lg:flex-row gap-[2rem] lg:gap-[4rem] justify-center">
         <div>
             <h3 class="uppercase font-bold">Digital Marketing</h3>
             <ul>
