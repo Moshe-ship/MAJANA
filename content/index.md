@@ -189,10 +189,12 @@ form button:hover {
     }
 }
 
+/* Hamburger menu styles */
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
+    padding: 10px;
 }
 
 .hamburger div {
