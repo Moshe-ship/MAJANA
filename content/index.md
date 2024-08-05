@@ -9,10 +9,10 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #fff;  /* Add background color */
+    background-color: #fff;
 }
 h1, h2, h3 {
-    color: #7f5eff;
+    color: #ff6f61;  /* Updated trendy color */
 }
 h1 {
     font-size: 4rem;  /* Increase the font size */
@@ -20,7 +20,7 @@ h1 {
 }
 h2 {
     font-size: 2.5rem;
-    border-bottom: 2px solid #7f5eff;
+    border-bottom: 2px solid #ff6f61;
     padding-bottom: 10px;
     margin-top: 40px;
 }
@@ -57,7 +57,7 @@ form input, form textarea {
     border-radius: 3px;
 }
 form button {
-    background-color: #7f5eff;
+    background-color: #ff6f61;
     color: white;
     padding: 15px 20px;
     border: none;
@@ -65,7 +65,7 @@ form button {
     border-radius: 3px;
 }
 form button:hover {
-    background-color: #6a4edc;
+    background-color: #e65c53;
 }
 .container {
     max-width: 1200px;
@@ -101,7 +101,7 @@ form button:hover {
 }
 .animated-line {
     display: inline-block;
-    animation: scroll-left 10s linear infinite;
+    animation: scroll-left 20s linear infinite;  /* Slower speed */
 }
 .animated-line:nth-child(2) {
     animation-direction: reverse;
@@ -124,7 +124,7 @@ form button:hover {
 }
 
 .service-box {
-    border: 1px solid #7f5eff;
+    border: 1px solid #ff6f61;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
@@ -134,17 +134,16 @@ form button:hover {
 
 .service-icon {
     font-size: 3rem;
-    color: #7f5eff;
+    color: #ff6f61;
     margin-bottom: 10px;
 }
 
 .btn {
     display: inline-block;
     padding: 15px 30px;
-    font-size: 1.5rem;
+    font-size: 1.2rem;  /* Adjusted font size */
     font-weight: bold;
     color: #fff;
-    background-color: #7f5eff;
     border: none;
     border-radius: 5px;
     text-align: center;
@@ -153,19 +152,28 @@ form button:hover {
     margin: 20px 10px;
 }
 
-.btn:hover {
-    background-color: #6a4edc;
+.btn-primary {
+    background-color: #ff6f61;
+}
+.btn-primary:hover {
+    background-color: #e65c53;
+}
+.btn-secondary {
+    background-color: #4CAF50;
+}
+.btn-secondary:hover {
+    background-color: #45a049;
 }
 </style>
 
 <div class="text-center">
-    <a href="#contact-form" class="btn">Hire Us</a>
-    <a href="#learn-more" class="btn">Learn More</a>
+    <a href="#contact-form" class="btn btn-primary">Hire Us</a>
+    <a href="/about" class="btn btn-secondary">Learn More</a>
 </div>
 
 <div class="section animated-lines">
-    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
-    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
+    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • X Ads • Local Growth •</div>
+    <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads • Google Ranking • X Ads • Local Growth •</div>
 </div>
 
 <div class="section">
@@ -191,11 +199,6 @@ form button:hover {
             <p>Comprehensive digital marketing strategies to help you achieve your business goals.</p>
         </div>
     </div>
-</div>
-
-<div id="learn-more" class="section">
-    <h2 class="text-center">Learn More About Us</h2>
-    <p class="text-center">Find out how Majana can transform your business with strategic marketing solutions tailored to your needs.</p>
 </div>
 
 <div class="section">
