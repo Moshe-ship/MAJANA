@@ -138,8 +138,9 @@ form button:hover {
 
 .btn {
     display: inline-block;
-    padding: 10px 20px;
-    font-size: 1rem;
+    padding: 15px 30px;
+    font-size: 1.5rem;
+    font-weight: bold;
     color: #fff;
     background-color: #4CAF50;
     border: none;
@@ -154,6 +155,10 @@ form button:hover {
     background-color: #45a049;
 }
 </style>
+
+<div class="text-center">
+    <a href="#contact-form" class="btn">Hire Us</a>
+</div>
 
 <div class="section animated-lines">
     <div class="animated-line">Google Ads • Local SEO • Technical SEO • Media Buying • META Ads • TikTok Ads •</div>
@@ -183,10 +188,6 @@ form button:hover {
             <p>Comprehensive digital marketing strategies to help you achieve your business goals.</p>
         </div>
     </div>
-</div>
-
-<div class="text-center">
-    <a href="#contact-form" class="btn">Hire Us</a>
 </div>
 
 <div class="section">
