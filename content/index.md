@@ -6,14 +6,12 @@ description = "Discover how Majana's strategic marketing can help you achieve yo
 <style>
 body {
     font-family: 'Bebas Neue', 'Open Sans', sans-serif;
-    background-color: #000;
-    color: #fff;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 h1, h2, h3 {
-    color: #4CAF50;
+    color: var(--text-color);
     margin: 0;
 }
 h1 {
@@ -89,10 +87,14 @@ h2 {
 }
 .service-item {
     width: calc(50% - 2rem);
-    background-color: #222;
+    background-color: var(--bg-secondary);
     padding: 2rem;
     text-align: center;
     border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.service-item:hover {
+    transform: scale(1.05);
 }
 .service-item h3 {
     margin-bottom: 1rem;
@@ -104,8 +106,8 @@ form {
     max-width: 600px;
     margin: 40px auto;
     padding: 20px;
-    background-color: #fff;
-    color: #000;
+    background-color: var(--bg-secondary);
+    color: var(--text-color);
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
